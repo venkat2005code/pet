@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Mobile Dog Training & Behavior Consultation</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <header class="site-header" id="site-header"></header>
+  <main>
+    <section class="section-dark hero-centered" id="hero" style="padding:140px 0 100px;position:relative;overflow:hidden;background-image:url('d11.jpg');background-size:cover;background-position:center;">
+      <div style="position:absolute;inset:0;background:rgba(10,10,10,0.6);"></div>
+      <div class="container" style="position:relative;z-index:1;">
+        <span class="badge animate-item" style="background:rgba(249,115,22,0.2);color:var(--color-primary);"><i class="fa-solid fa-envelope"></i> Get In Touch</span>
+        <h1 class="hero-title animate-item">Let's Start Your Dog's <span style="color:var(--color-primary);">Transformation</span></h1>
+        <p class="hero-description animate-item">Book an in-home session, schedule a video consultation, or send us a message.</p>
+      </div>
+    </section>
+
+    <section class="section" id="contact-info">
+      <div class="container">
+        <div class="grid-3">
+          <div class="contact-info-card animate-item" data-delay="1">
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+            <h3 class="card-title">Call Us</h3>
+            <p class="card-text">Mon–Sat, 8am–6pm</p>
+            <p class="card-text" style="color:var(--color-primary);font-weight:600;margin-top:8px;">+1 (555) 234-5678</p>
+          </div>
+          <div class="contact-info-card animate-item" data-delay="2">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <h3 class="card-title">Email Us</h3>
+            <p class="card-text">Reply within 24 hours</p>
+            <p class="card-text" style="color:var(--color-primary);font-weight:600;margin-top:8px;">hello@mobiledogtraining.com</p>
+          </div>
+          <div class="contact-info-card animate-item" data-delay="3">
+            <div class="icon"><i class="fa-solid fa-van-shuttle"></i></div>
+            <h3 class="card-title">Service Area</h3>
+            <p class="card-text">Greater Metro Area</p>
+            <p class="card-text" style="color:var(--color-primary);font-weight:600;margin-top:8px;">We come to you!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="message">
+      <div class="container">
+        <div class="hero-content">
+          <div style="max-width:100%;" class="animate-item animate-left">
+            <span class="section-label">Send a Message</span>
+            <h2 class="section-title" style="text-align:left;">Have a Question?</h2>
+            <form class="contact-form-wrapper" id="contactForm" style="margin-top:24px;">
+              <div class="grid-2" style="gap:20px;">
+                <div class="form-group"><label class="form-label" for="contactName">Full Name</label><input type="text" class="form-input" id="contactName" required></div>
+                <div class="form-group"><label class="form-label" for="contactEmail">Email</label><input type="email" class="form-input" id="contactEmail" required></div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactSubject">Subject</label>
+                <select class="form-select" id="contactSubject" required>
+                  <option value="">Select a topic</option>
+                  <option value="booking">Booking Inquiry</option>
+                  <option value="packages">Package Information</option>
+                  <option value="video">Video Consultation</option>
+                  <option value="service-area">Service Area Question</option>
+                </select>
+              </div>
+              <div class="form-group"><label class="form-label" for="contactMessage">Message</label><textarea class="form-textarea" id="contactMessage" required></textarea></div>
+              <button type="submit" class="btn btn-primary" style="width:100%;"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            </form>
+          </div>
+          <div class="section-img-wrap animate-item animate-right">
+            <img class="section-img" src="d1.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="map">
+      <div class="container">
+        <div class="section-header animate-item">
+          <span class="section-label">Coverage</span>
+          <h2 class="section-title">Our Service Area</h2>
+        </div>
+        <div class="service-area-layout">
+          <div class="section-img-wrap animate-item animate-left" style="aspect-ratio:16/10;">
+            <img class="section-img" src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=900&q=80" alt="Service area coverage map">
+          </div>
+          <div class="service-zones animate-item animate-right">
+            <h3 class="card-title" style="margin-bottom:20px;">Zones We Cover</h3>
+            <ul class="zone-list">
+              <li class="zone-item"><i class="fa-solid fa-location-dot" style="color:var(--color-primary);"></i> Downtown & Central</li>
+              <li class="zone-item"><i class="fa-solid fa-location-dot" style="color:var(--color-primary);"></i> North Suburbs</li>
+              <li class="zone-item"><i class="fa-solid fa-location-dot" style="color:var(--color-primary);"></i> South Suburbs</li>
+              <li class="zone-item"><i class="fa-solid fa-location-dot" style="color:var(--color-primary);"></i> East Valley</li>
+              <li class="zone-item"><i class="fa-solid fa-location-dot" style="color:var(--color-primary);"></i> West Hills</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-accent" id="hours">
+      <div class="container">
+        <div class="hero-content">
+          <div class="animate-item animate-left">
+            <span class="section-label">Availability</span>
+            <h2 class="section-title" style="text-align:left;">Session Hours</h2>
+            <div class="hours-table">
+              <div class="hours-row"><span class="hours-day">Monday – Friday</span><span class="hours-time">8:00 AM – 7:00 PM</span></div>
+              <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">9:00 AM – 5:00 PM</span></div>
+              <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-time">Video consultations only</span></div>
+              <div class="hours-row"><span class="hours-day">Response Time</span><span class="hours-time">Within 24 hours</span></div>
+            </div>
+          </div>
+          <div class="section-img-wrap animate-item animate-right">
+            <img class="section-img" src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=900&q=80" alt="Trainer availability schedule">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="booking">
+      <div class="container">
+        <div class="hero-content">
+          <div class="booking-wrapper animate-item animate-left" style="max-width:100%;">
+            <span class="section-label">Book Online</span>
+            <h2 class="section-title" style="text-align:left;">Schedule Your In-Home Session</h2>
+            <form class="contact-form-wrapper" id="bookingForm" style="margin-top:24px;">
+              <div class="grid-2" style="gap:20px;">
+                <div class="form-group"><label class="form-label" for="bookName">Full Name</label><input type="text" class="form-input" id="bookName" required></div>
+                <div class="form-group"><label class="form-label" for="bookEmail">Email</label><input type="email" class="form-input" id="bookEmail" required></div>
+                <div class="form-group"><label class="form-label" for="bookPhone">Phone</label><input type="tel" class="form-input" id="bookPhone" required></div>
+                <div class="form-group"><label class="form-label" for="bookDog">Dog's Name & Breed</label><input type="text" class="form-input" id="bookDog" required></div>
+                <div class="form-group">
+                  <label class="form-label" for="bookPackage">Package</label>
+                  <select class="form-select" id="bookPackage" required>
+                    <option value="">Choose a package</option>
+                    <option value="starter">Home Starter Pack — $349</option>
+                    <option value="behavior">Behavior Consultation — $549</option>
+                    <option value="complete">Complete Transformation — $999</option>
+                    <option value="video">Video Consultation</option>
+                  </select>
+                </div>
+                <div class="form-group"><label class="form-label" for="bookDate">Preferred Date</label><input type="date" class="form-input" id="bookDate" required></div>
+              </div>
+              <div class="form-group"><label class="form-label" for="bookAddress">Home Address</label><input type="text" class="form-input" id="bookAddress" required></div>
+              <div class="form-group"><label class="form-label" for="bookNotes">Notes</label><textarea class="form-textarea" id="bookNotes"></textarea></div>
+              <button type="submit" class="btn btn-primary" style="width:100%;"><i class="fa-solid fa-calendar-plus"></i> Book In-Home Session</button>
+            </form>
+          </div>
+          <div class="section-img-wrap animate-item animate-right img-float">
+            <img class="section-img" src="d12.jpg" alt="Book in-home dog training">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="js/config.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/rtl.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

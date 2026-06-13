@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Mobile Dog Training & Behavior Consultation</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <style>
+    .register-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .register-container {
+      width: 100%;
+      max-width: 450px;
+      background: var(--color-bg);
+      border-radius: 12px;
+      padding: 50px 40px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .register-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 40px;
+      justify-content: center;
+    }
+
+    .register-form {
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: var(--color-text);
+      font-size: 14px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: 'DM Sans', sans-serif;
+      color: var(--color-text);
+      background: var(--color-bg-alt);
+      transition: all 0.3s ease;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      background: var(--color-bg);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .form-row .form-group {
+      margin-bottom: 0;
+    }
+
+    .terms-agreement {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 20px;
+      font-size: 13px;
+      color: var(--color-text);
+    }
+
+    .terms-agreement input {
+      width: 16px;
+      height: 16px;
+      margin-top: 3px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .terms-agreement a {
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+
+    .register-btn {
+      width: 100%;
+      padding: 12px;
+      background: var(--color-primary);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-bottom: 20px;
+    }
+
+    .register-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      margin: 30px 0;
+      font-size: 14px;
+      color: var(--color-muted);
+    }
+
+    .divider::before,
+    .divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--color-border);
+    }
+
+    .divider span {
+      margin: 0 12px;
+    }
+
+    .social-login {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .social-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 12px;
+      border: 1px solid var(--color-border);
+      background: var(--color-bg-alt);
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      color: var(--color-text);
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .social-btn:hover {
+      background: var(--color-border);
+      transform: translateY(-2px);
+    }
+
+    .social-btn i {
+      font-size: 18px;
+    }
+
+    .login-link {
+      text-align: center;
+      font-size: 14px;
+      color: var(--color-text);
+    }
+
+    .login-link a {
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: opacity 0.3s ease;
+    }
+
+    .login-link a:hover {
+      opacity: 0.8;
+    }
+
+    .register-toggles {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+      z-index: 100;
+    }
+
+    .toggle-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 1px solid var(--color-border);
+      background: var(--color-bg-alt);
+      color: var(--color-text-muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .toggle-btn:hover {
+      background: var(--color-primary);
+      color: #fff;
+      border-color: var(--color-primary);
+    }
+
+    .toggle-btn.rtl-toggle {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .toggle-btn.rtl-toggle:hover {
+      background: var(--color-secondary);
+      color: var(--color-primary);
+      border-color: var(--color-primary);
+    }
+
+    @media (max-width: 576px) {
+      .register-container {
+        padding: 40px 20px;
+        max-width: 100%;
+      }
+
+      .register-header .logo-text {
+        font-size: 20px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .register-container {
+        padding: 30px 16px;
+        border-radius: 8px;
+        margin: 10px;
+      }
+
+      .register-header {
+        margin-bottom: 30px;
+      }
+
+      .register-form h2 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 16px;
+      }
+
+      .form-group label {
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+      }
+
+      .form-group input {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .terms-agreement {
+        font-size: 0.7rem;
+        gap: 6px;
+      }
+
+      .terms-agreement input {
+        width: 14px;
+        height: 14px;
+      }
+
+      .register-btn {
+        padding: 10px;
+        font-size: 0.9rem;
+        margin-bottom: 16px;
+      }
+
+      .divider {
+        margin: 20px 0;
+        font-size: 0.75rem;
+      }
+
+      .social-login {
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      .social-btn {
+        padding: 10px;
+        font-size: 0.8rem;
+        gap: 8px;
+      }
+
+      .login-link {
+        font-size: 0.8rem;
+      }
+
+      .register-toggles {
+        top: 10px;
+        right: 10px;
+        gap: 8px;
+      }
+
+      .toggle-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 0.8rem;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="tel"] {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body class="register-page">
+  <div class="register-toggles">
+    <button class="toggle-btn" id="themeToggle" title="Toggle Dark/Light Mode">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+    <button class="toggle-btn rtl-toggle" id="rtlToggle" title="Toggle LTR/RTL">LTR</button>
+  </div>
+
+  <div class="register-container">
+    <div class="register-header">
+      <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+        <div style="width:44px;height:44px;background:var(--color-secondary);border-radius:10px;display:flex;align-items:center;justify-content:center;border:2px solid var(--color-primary);flex-shrink:0;">
+          <i style="color:var(--color-primary);font-size:1.15rem;" class="fa-solid fa-dog"></i>
+        </div>
+        <span style="font-family:'DM Sans',sans-serif;font-size:1.2rem;font-weight:800;letter-spacing:3px;color:var(--color-text);white-space:nowrap;">PAWPRO</span>
+      </a>
+    </div>
+
+    <form class="register-form" onsubmit="handleRegister(event)">
+      <h2 style="text-align:center;margin-bottom:30px;font-size:24px;color:var(--color-text);">Create Account</h2>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" placeholder="First name" required>
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a strong password" required>
+      </div>
+
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+      </div>
+
+      <div class="terms-agreement">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms" style="margin:0;">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+      </div>
+
+      <button type="submit" class="register-btn">Create Account</button>
+    </form>
+
+    <div class="divider">
+      <span>OR</span>
+    </div>
+
+    <div class="social-login">
+      <button type="button" class="social-btn" onclick="handleGoogleRegister()">
+        <i class="fa-brands fa-google"></i>
+        Sign up with Google
+      </button>
+      <button type="button" class="social-btn" onclick="handleFacebookRegister()">
+        <i class="fa-brands fa-facebook"></i>
+        Sign up with Facebook
+      </button>
+    </div>
+
+    <div class="login-link">
+      Already have an account? <a href="login.html">Sign In</a>
+    </div>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/rtl.js"></script>
+  <script>
+    function handleRegister(event) {
+      event.preventDefault();
+      const firstName = document.getElementById('first-name').value;
+      const lastName = document.getElementById('last-name').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirm-password').value;
+      
+      if (password !== confirmPassword) {
+        alert('Passwords do not match!');
+        return;
+      }
+      
+      console.log('Registration attempt:', { firstName, lastName, email });
+      alert('Registration functionality would be connected to your backend.');
+    }
+
+    function handleGoogleRegister() {
+      console.log('Google signup clicked');
+      alert('Google signup would redirect to Google OAuth.');
+    }
+
+    function handleFacebookRegister() {
+      console.log('Facebook signup clicked');
+      alert('Facebook signup would redirect to Facebook OAuth.');
+    }
+
+    // Ensure toggles are initialized after page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.initThemeToggle) window.initThemeToggle();
+      if (window.initRtlToggle) window.initRtlToggle();
+    });
+  </script>
+</body>
+</html>
