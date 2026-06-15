@@ -10,14 +10,8 @@
       home2: 'home-2.html',
       about: 'about.html',
       services: 'services.html',
-      contact: 'contact.html',
-      userDashboard: 'user-dashboard.html',
-      adminDashboard: 'admin-dashboard.html'
+      contact: 'contact.html'
     };
-  }
-
-  function isDashboardActive() {
-    return isActive('user-dashboard.html') || isActive('admin-dashboard.html') ? 'active' : '';
   }
 
   function isActive(page) {
@@ -64,27 +58,16 @@
             <li class="nav-item">
               <a href="${links.contact}" class="nav-link ${isActive('contact.html')}">Contact</a>
             </li>
-            <li class="nav-item" data-dropdown>
-              <a href="#" class="nav-link ${isDashboardActive()}">
-                Dashboard <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
-              </a>
-              <div class="nav-dropdown">
-                <a href="${links.userDashboard}" class="dropdown-link ${isActive('user-dashboard.html')}">User Dashboard</a>
-                <a href="${links.adminDashboard}" class="dropdown-link ${isActive('admin-dashboard.html')}">Admin Dashboard</a>
-              </div>
-            </li>
           </ul>
           <div class="mobile-nav-actions">
             <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
             <button class="rtl-toggle" id="rtlToggleMobile" aria-label="Toggle direction">LTR</button>
-            <button class="btn-login btn-login-mobile" id="loginBtnMobile">Login</button>
           </div>
         </nav>
 
         <div class="header-actions">
           <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
           <button class="rtl-toggle" id="rtlToggle" aria-label="Toggle direction">LTR</button>
-          <button class="btn-login" id="loginBtn">Login</button>
         </div>
       </div>
     `;
@@ -124,8 +107,6 @@
               <li><a href="${links.about}">About Us</a></li>
               <li><a href="${links.services}">Services</a></li>
               <li><a href="${links.contact}">Contact</a></li>
-              <li><a href="${links.userDashboard}">User Dashboard</a></li>
-              <li><a href="${links.adminDashboard}">Admin Dashboard</a></li>
             </ul>
           </div>
           <div>
@@ -203,91 +184,6 @@
       }
     });
 
-    const loginBtn = document.getElementById('loginBtn');
-    const loginBtnMobile = document.getElementById('loginBtnMobile');
-    if (loginBtn) {
-      loginBtn.addEventListener('click', function() {
-        window.location.href = 'login.html';
-      });
-    }
-    if (loginBtnMobile) {
-      loginBtnMobile.addEventListener('click', function () {
-        window.location.href = 'login.html';
-      });
-    }
-  }
-
-  // Dashboard sidebar toggle (mobile) - supports user and admin dashboards
-  function initDashboardEvents() {
-    const dashboardToggle = document.getElementById('dashboardMobileToggle');
-    if (dashboardToggle) {
-      dashboardToggle.addEventListener('click', function (e) {
-        const layout = document.querySelector('.dashboard-layout');
-        if (!layout) return;
-        layout.classList.toggle('sidebar-open');
-      });
-
-      // Close sidebar when clicking outside it
-      document.addEventListener('click', function (e) {
-        const layout = document.querySelector('.dashboard-layout');
-        if (!layout || !layout.classList.contains('sidebar-open')) return;
-        const sidebar = layout.querySelector('.dashboard-sidebar');
-        if (!e.target.closest('.dashboard-sidebar') && !e.target.closest('#dashboardMobileToggle')) {
-          layout.classList.remove('sidebar-open');
-        }
-      });
-    }
-  }
-
-  function renderLoginModal() {
-    if (document.getElementById('loginModal')) return;
-
-    const modal = document.createElement('div');
-    modal.id = 'loginModal';
-    modal.className = 'modal-overlay';
-    modal.innerHTML = `
-      <div class="modal">
-        <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
-        <h2 class="modal-title">Welcome Back</h2>
-        <p class="modal-subtitle">Sign in to your ${SITE_CONFIG.logoText} account</p>
-        <form id="loginForm">
-          <div class="form-group">
-            <label class="form-label" for="loginEmail">Email Address</label>
-            <input type="email" class="form-input" id="loginEmail" placeholder="you@example.com" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="loginPassword">Password</label>
-            <input type="password" class="form-input" id="loginPassword" placeholder="Enter your password" required>
-          </div>
-          <button type="submit" class="btn btn-primary" style="width:100%">Sign In</button>
-        </form>
-      </div>
-    `;
-    document.body.appendChild(modal);
-
-    document.getElementById('modalClose').addEventListener('click', closeLoginModal);
-    modal.addEventListener('click', function (e) {
-      if (e.target === modal) closeLoginModal();
-    });
-    document.getElementById('loginForm').addEventListener('submit', function (e) {
-      e.preventDefault();
-      alert('Login functionality will be connected when backend is ready.');
-      closeLoginModal();
-    });
-  }
-
-  function openLoginModal() {
-    renderLoginModal();
-    document.getElementById('loginModal').classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeLoginModal() {
-    const modal = document.getElementById('loginModal');
-    if (modal) {
-      modal.classList.remove('open');
-      document.body.style.overflow = '';
-    }
   }
 
   function initFAQ() {
@@ -339,15 +235,10 @@
   function init() {
     renderHeader();
     renderFooter();
-    initDashboardEvents();
     initFAQ();
     initContactForm();
     initNewsletter();
     initBookingForm();
-
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') closeLoginModal();
-    });
   }
 
   if (document.readyState === 'loading') {
