@@ -61,6 +61,7 @@
   --radius-md: 12px;
   --radius-lg: 20px;
   --radius-full: 50%;
+  --radius-btn: 10px;
 }
 
 [data-theme="dark"] {

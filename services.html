@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - Mobile Dog Training & Behavior Consultation</title>
+  <title>Services - Mobile Dog Training &amp; Behavior Consultation</title>
+  <meta name="description" content="Explore our full range of in-home dog training services, behavior consultations, and video packages. Transparent pricing — we come to you.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,110 +19,186 @@
 <body>
   <header class="site-header" id="site-header"></header>
   <main>
-    <section class="section-dark hero-centered" id="hero" style="padding:140px 0 100px;position:relative;overflow:hidden;background-image:url('d13.jpg');background-size:cover;background-position:center;">
-      <div style="position:absolute;inset:0;background:rgba(10,10,10,0.6);"></div>
+
+    <!-- Hero -->
+    <section class="section-dark hero-centered" id="hero" style="padding:140px 0 100px;position:relative;overflow:hidden;background-image:url('https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=1400&q=80');background-size:cover;background-position:center top;">
+      <div style="position:absolute;inset:0;background:rgba(10,10,10,0.65);"></div>
       <div class="container" style="position:relative;z-index:1;">
         <span class="badge animate-item" style="background:rgba(249,115,22,0.2);color:var(--color-primary);"><i class="fa-solid fa-briefcase"></i> Our Services</span>
-        <h1 class="hero-title animate-item">Training & Consultation <span style="color:var(--color-primary);">Built for Your Home</span></h1>
-        <p class="hero-description animate-item">From puppy foundations to complex behavior modification — delivered at your doorstep or via live video.</p>
+        <h1 class="hero-title animate-item">Expert Training <span style="color:var(--color-primary);">At Every Level</span></h1>
+        <p class="hero-description animate-item" style="max-width:600px;margin:0 auto 36px;">From first commands to complex behavior modification — all delivered in your home or via live video.</p>
+        <div class="hero-buttons animate-item" style="justify-content:center;">
+          <a href="#pricing" class="btn btn-primary"><i class="fa-solid fa-tag"></i> View Pricing</a>
+          <a href="contact.html#booking" class="btn btn-secondary" style="color:#fff;border-color:rgba(255,255,255,0.4);">Book a Session</a>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="packages">
+    <!-- What We Offer — horizontal feature strips -->
+    <section class="section" id="what-we-offer">
       <div class="container">
         <div class="section-header animate-item">
-          <span class="section-label">In-Home Packages</span>
-          <h2 class="section-title">Mobile Training Packages</h2>
+          <span class="section-label">What We Offer</span>
+          <h2 class="section-title">Training Built Around Your Home</h2>
+          <p class="section-subtitle">Every program is delivered on-site — in the environment where your dog actually lives and learns.</p>
         </div>
-        <div class="grid-3">
-          <div class="program-card animate-item" data-delay="1">
-            <div class="program-image"><img src="d9.webp" alt="Puppy training"></div>
-            <div class="program-body">
-              <span class="program-tag">4 Sessions</span>
-              <h3 class="program-title">Home Starter Pack</h3>
-              <p class="program-desc">Sit, stay, recall, leash manners — ideal for new dog owners.</p>
-              <div class="program-meta"><span>60 min/session</span><span class="program-price">$349</span></div>
-            </div>
+
+        <!-- Strip 1 -->
+        <div class="service-strip animate-item">
+          <div class="service-strip-img">
+            <img src="dg1.jpg" alt="Puppy basic training session at home">
           </div>
-          <div class="program-card animate-item" data-delay="2">
-            <div class="program-image"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&q=80" alt="Behavior consultation"></div>
-            <div class="program-body">
-              <span class="program-tag">6 Sessions</span>
-              <h3 class="program-title">Behavior Consultation</h3>
-              <p class="program-desc">Customized plan for reactivity, anxiety, aggression, or separation issues.</p>
-              <div class="program-meta"><span>75 min/session</span><span class="program-price">$549</span></div>
-            </div>
+          <div class="service-strip-body">
+            <span class="section-label">Foundation</span>
+            <h3 class="service-strip-title">Basic Obedience &amp; Puppy Start</h3>
+            <p class="card-text">Build a solid foundation — sit, down, stay, recall, loose-leash walking, and door greetings — all taught in your home where your dog will actually use these skills.</p>
+            <ul class="service-strip-list">
+              <li><i class="fa-solid fa-check"></i> Sit, stay, recall commands</li>
+              <li><i class="fa-solid fa-check"></i> Loose-leash walking on your street</li>
+              <li><i class="fa-solid fa-check"></i> Door manners &amp; guest greetings</li>
+              <li><i class="fa-solid fa-check"></i> Homework guide between sessions</li>
+            </ul>
+            <a href="#pricing" class="btn btn-outline" style="margin-top:20px;">See Pricing</a>
           </div>
-          <div class="program-card animate-item" data-delay="3">
-            <div class="program-image"><img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=600&q=80" alt="Complete training"></div>
-            <div class="program-body">
-              <span class="program-tag">12 Sessions</span>
-              <h3 class="program-title">Complete Transformation</h3>
-              <p class="program-desc">Comprehensive modification with video check-ins and 90-day support.</p>
-              <div class="program-meta"><span>75 min/session</span><span class="program-price">$999</span></div>
-            </div>
+        </div>
+
+        <!-- Strip 2 -->
+        <div class="service-strip service-strip-reverse animate-item">
+          <div class="service-strip-img">
+            <img src="dg4.jpg" alt="Dog behavior assessment and consultation">
+          </div>
+          <div class="service-strip-body">
+            <span class="section-label">Behavior</span>
+            <h3 class="service-strip-title">Behavior Consultation &amp; Modification</h3>
+            <p class="card-text">Tackling reactivity, aggression, anxiety, or destructive habits with science-backed desensitization and counter-conditioning — applied where the behavior actually happens.</p>
+            <ul class="service-strip-list">
+              <li><i class="fa-solid fa-check"></i> In-depth behavior assessment</li>
+              <li><i class="fa-solid fa-check"></i> Leash reactivity &amp; aggression</li>
+              <li><i class="fa-solid fa-check"></i> Separation anxiety protocols</li>
+              <li><i class="fa-solid fa-check"></i> Custom behavior modification plan</li>
+            </ul>
+            <a href="#pricing" class="btn btn-outline" style="margin-top:20px;">See Pricing</a>
+          </div>
+        </div>
+
+        <!-- Strip 3 -->
+        <div class="service-strip animate-item">
+          <div class="service-strip-img">
+            <img src="dg3.jpg" alt="Video consultation session with dog trainer">
+          </div>
+          <div class="service-strip-body">
+            <span class="section-label">Remote</span>
+            <h3 class="service-strip-title">Live Video Consultations</h3>
+            <p class="card-text">Not in our service zone? No problem. Our video consultations let us observe your dog's behavior live, create a personalized plan, and coach you through every step remotely.</p>
+            <ul class="service-strip-list">
+              <li><i class="fa-solid fa-check"></i> 45-min pre-visit assessment call</li>
+              <li><i class="fa-solid fa-check"></i> Remote-only package (4 sessions)</li>
+              <li><i class="fa-solid fa-check"></i> Progress check-in calls</li>
+              <li><i class="fa-solid fa-check"></i> Available anywhere, any time zone</li>
+            </ul>
+            <a href="#pricing" class="btn btn-outline" style="margin-top:20px;">See Pricing</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="behavior">
+    <!-- ★ PRICING — Main Highlighted Section ★ -->
+    <section class="section section-dark" id="pricing">
       <div class="container">
-        <div class="hero-content">
-          <div class="section-img-wrap animate-item animate-left">
-            <img class="section-img" src="d8.webp" alt="Leash training behavior">
+        <div class="section-header animate-item">
+          <span class="section-label">Transparent Pricing</span>
+          <h2 class="section-title" style="color:#fff;">Choose Your Package</h2>
+          <p class="section-subtitle" style="color:rgba(255,255,255,0.7);">No hidden fees. No long contracts. Just honest pricing for expert in-home training.</p>
+        </div>
+
+        <div class="pricing-grid-featured animate-item">
+          <!-- Card 1 -->
+          <div class="pricing-card-v2">
+            <div class="pricing-card-v2-header">
+              <div class="pricing-v2-icon"><i class="fa-solid fa-house"></i></div>
+              <h3 class="pricing-v2-name">Home Starter Pack</h3>
+              <span class="pricing-v2-tag">For New Owners</span>
+            </div>
+            <div class="pricing-v2-price"><span class="pricing-v2-currency">$</span>349</div>
+            <div class="pricing-v2-sessions"><i class="fa-solid fa-calendar-days"></i> 4 In-Home Sessions</div>
+            <ul class="pricing-v2-features">
+              <li><i class="fa-solid fa-circle-check"></i> Basic obedience commands</li>
+              <li><i class="fa-solid fa-circle-check"></i> Leash manners on your street</li>
+              <li><i class="fa-solid fa-circle-check"></i> Door greeting training</li>
+              <li><i class="fa-solid fa-circle-check"></i> 14-day email support</li>
+              <li><i class="fa-solid fa-circle-check"></i> Training homework guide</li>
+            </ul>
+            <a href="contact.html#booking" class="btn btn-outline" style="width:100%;margin-top:auto;">Book This Package</a>
           </div>
-          <div class="animate-item animate-right">
-            <span class="section-label">Specialized Care</span>
-            <h2 class="section-title" style="text-align:left;">Behavior Consultation</h2>
-            <div class="service-detail-card" style="margin-bottom:16px;">
-              <div class="service-number"><i class="fa-solid fa-link"></i></div>
-              <div><h3 class="card-title">Leash Reactivity</h3><p class="card-text">Calm walking past triggers on your actual routes.</p></div>
+
+          <!-- Card 2 — Featured -->
+          <div class="pricing-card-v2 pricing-card-v2-featured">
+            <div class="pricing-v2-popular-badge">Most Popular</div>
+            <div class="pricing-card-v2-header">
+              <div class="pricing-v2-icon"><i class="fa-solid fa-brain"></i></div>
+              <h3 class="pricing-v2-name">Behavior Consultation</h3>
+              <span class="pricing-v2-tag">Best Value</span>
             </div>
-            <div class="service-detail-card" style="margin-bottom:16px;">
-              <div class="service-number"><i class="fa-solid fa-house"></i></div>
-              <div><h3 class="card-title">Separation Anxiety</h3><p class="card-text">Independence protocols with real departure scenarios.</p></div>
+            <div class="pricing-v2-price"><span class="pricing-v2-currency">$</span>549</div>
+            <div class="pricing-v2-sessions"><i class="fa-solid fa-calendar-days"></i> 6 In-Home Sessions</div>
+            <ul class="pricing-v2-features">
+              <li><i class="fa-solid fa-circle-check"></i> Full behavior assessment</li>
+              <li><i class="fa-solid fa-circle-check"></i> Reactivity &amp; anxiety focus</li>
+              <li><i class="fa-solid fa-circle-check"></i> Custom modification plan</li>
+              <li><i class="fa-solid fa-circle-check"></i> 2 video check-in calls</li>
+              <li><i class="fa-solid fa-circle-check"></i> 30-day email support</li>
+            </ul>
+            <a href="contact.html#booking" class="btn btn-primary" style="width:100%;margin-top:auto;">Book This Package</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="pricing-card-v2">
+            <div class="pricing-card-v2-header">
+              <div class="pricing-v2-icon"><i class="fa-solid fa-star"></i></div>
+              <h3 class="pricing-v2-name">Complete Transformation</h3>
+              <span class="pricing-v2-tag">Full Program</span>
             </div>
-            <div class="service-detail-card">
-              <div class="service-number"><i class="fa-solid fa-bell"></i></div>
-              <div><h3 class="card-title">Excessive Barking</h3><p class="card-text">Targeted quiet protocols for window and yard triggers.</p></div>
+            <div class="pricing-v2-price"><span class="pricing-v2-currency">$</span>999</div>
+            <div class="pricing-v2-sessions"><i class="fa-solid fa-calendar-days"></i> 12 In-Home Sessions</div>
+            <ul class="pricing-v2-features">
+              <li><i class="fa-solid fa-circle-check"></i> Comprehensive behavior overhaul</li>
+              <li><i class="fa-solid fa-circle-check"></i> Full modification program</li>
+              <li><i class="fa-solid fa-circle-check"></i> 4 video check-in calls</li>
+              <li><i class="fa-solid fa-circle-check"></i> Personalized behavior plan</li>
+              <li><i class="fa-solid fa-circle-check"></i> 90-day email support</li>
+            </ul>
+            <a href="contact.html#booking" class="btn btn-outline" style="width:100%;margin-top:auto;">Book This Package</a>
+          </div>
+        </div>
+
+        <!-- Video add-ons -->
+        <div class="video-addons animate-item">
+          <h3 class="video-addons-title">Video Consultation Add-Ons</h3>
+          <div class="video-addons-grid">
+            <div class="video-addon-card">
+              <i class="fa-solid fa-video"></i>
+              <div class="video-addon-name">Pre-Visit Call</div>
+              <div class="video-addon-price">$75</div>
+              <div class="video-addon-desc">45-min assessment + training plan</div>
+            </div>
+            <div class="video-addon-card video-addon-card-featured">
+              <i class="fa-solid fa-rotate"></i>
+              <div class="video-addon-name">Check-In Session</div>
+              <div class="video-addon-price">$55</div>
+              <div class="video-addon-desc">30-min progress review &amp; adjustments</div>
+            </div>
+            <div class="video-addon-card">
+              <i class="fa-solid fa-laptop"></i>
+              <div class="video-addon-name">Remote Pack</div>
+              <div class="video-addon-price">$299</div>
+              <div class="video-addon-desc">4 full video sessions + behavior plan</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="video">
-      <div class="container">
-        <div class="hero-content">
-          <div class="animate-item animate-left">
-            <span class="section-label">Remote Options</span>
-            <h2 class="section-title" style="text-align:left;">Video Consultation Services</h2>
-            <div class="grid-3" style="margin-top:24px;">
-              <div class="pricing-card">
-                <h3 class="pricing-name">Pre-Visit</h3>
-                <div class="pricing-price">$75</div>
-                <ul class="pricing-features"><li>45-min assessment</li><li>Training plan</li><li>Home setup tips</li></ul>
-              </div>
-              <div class="pricing-card featured">
-                <h3 class="pricing-name">Check-In</h3>
-                <div class="pricing-price">$55</div>
-                <ul class="pricing-features"><li>30-min review</li><li>Homework help</li><li>Plan adjustments</li></ul>
-              </div>
-              <div class="pricing-card">
-                <h3 class="pricing-name">Remote Pack</h3>
-                <div class="pricing-price">$299</div>
-                <ul class="pricing-features"><li>4 video sessions</li><li>Behavior plan</li><li>30-day support</li></ul>
-              </div>
-            </div>
-          </div>
-          <div class="section-img-wrap animate-item animate-right img-float">
-            <img class="section-img" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=900&q=80" alt="Video dog consultation">
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- Comparison Table -->
     <section class="section section-accent" id="comparison">
       <div class="container">
         <div class="section-header animate-item">
@@ -134,10 +211,52 @@
             <tbody>
               <tr><td>In-Home Sessions</td><td>4</td><td>6</td><td>12</td></tr>
               <tr><td>Behavior Assessment</td><td class="cross">—</td><td class="check">✓</td><td class="check">✓</td></tr>
-              <tr><td>Video Check-Ins</td><td class="cross">—</td><td>2</td><td>4</td></tr>
+              <tr><td>Video Check-Ins</td><td class="cross">—</td><td>2 included</td><td>4 included</td></tr>
+              <tr><td>Personalized Plan</td><td class="cross">—</td><td class="check">✓</td><td class="check">✓</td></tr>
               <tr><td>Email Support</td><td>14 days</td><td>30 days</td><td>90 days</td></tr>
+              <tr><td>Session Duration</td><td>60 min</td><td>75 min</td><td>75 min</td></tr>
             </tbody>
           </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process steps -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-header animate-item">
+          <span class="section-label">How It Works</span>
+          <h2 class="section-title">Your Training Journey</h2>
+          <p class="section-subtitle">Simple, stress-free, and structured around your schedule.</p>
+        </div>
+        <div class="process-journey animate-item">
+          <div class="process-journey-step">
+            <div class="process-journey-num">01</div>
+            <div class="process-journey-icon"><i class="fa-solid fa-calendar-check"></i></div>
+            <h4 class="process-journey-title">Book Online</h4>
+            <p class="card-text">Choose your package and select a preferred date in our online form.</p>
+          </div>
+          <div class="process-journey-line"></div>
+          <div class="process-journey-step">
+            <div class="process-journey-num">02</div>
+            <div class="process-journey-icon"><i class="fa-solid fa-video"></i></div>
+            <h4 class="process-journey-title">Video Intro</h4>
+            <p class="card-text">Optional pre-visit call to assess your dog's behavior before we arrive.</p>
+          </div>
+          <div class="process-journey-line"></div>
+          <div class="process-journey-step">
+            <div class="process-journey-num">03</div>
+            <div class="process-journey-icon"><i class="fa-solid fa-house-chimney"></i></div>
+            <h4 class="process-journey-title">Home Visit</h4>
+            <p class="card-text">Trainer arrives at your door, ready to work in your actual environment.</p>
+          </div>
+          <div class="process-journey-line"></div>
+          <div class="process-journey-step">
+            <div class="process-journey-num">04</div>
+            <div class="process-journey-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h4 class="process-journey-title">Follow-Up</h4>
+            <p class="card-text">Ongoing support, check-ins, and progress monitoring between sessions.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -145,7 +264,7 @@
     <section class="cta-section" id="cta">
       <div class="container">
         <h2 class="cta-title animate-item">Find the Right Service for Your Dog</h2>
-        <p class="cta-text animate-item">Book a video intro call and we'll recommend the best plan.</p>
+        <p class="cta-text animate-item">Book a free video intro and we'll recommend the best plan for your dog's needs.</p>
         <a href="contact.html#booking" class="btn animate-item"><i class="fa-solid fa-calendar-check"></i> Book Online Now</a>
       </div>
     </section>

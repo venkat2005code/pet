@@ -10,6 +10,8 @@
       home2: 'home-2.html',
       about: 'about.html',
       services: 'services.html',
+      gallery: 'gallery.html',
+      reviews: 'reviews.html',
       contact: 'contact.html'
     };
   }
