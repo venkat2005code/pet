@@ -9,9 +9,10 @@
       home1: 'index.html',
       home2: 'home-2.html',
       about: 'about.html',
-      services: 'services.html',
+      packages: 'packages.html',
       gallery: 'gallery.html',
       reviews: 'reviews.html',
+      trainers: 'trainers.html',
       contact: 'contact.html'
     };
   }
@@ -55,7 +56,13 @@
               <a href="${links.about}" class="nav-link ${isActive('about.html')}">About</a>
             </li>
             <li class="nav-item">
-              <a href="${links.services}" class="nav-link ${isActive('services.html')}">Services</a>
+              <a href="${links.packages}" class="nav-link ${isActive('packages.html')}">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a href="${links.reviews}" class="nav-link ${isActive('reviews.html')}">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a href="${links.trainers}" class="nav-link ${isActive('trainers.html')}">Trainers</a>
             </li>
             <li class="nav-item">
               <a href="${links.contact}" class="nav-link ${isActive('contact.html')}">Contact</a>
@@ -70,6 +77,7 @@
         <div class="header-actions">
           <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
           <button class="rtl-toggle" id="rtlToggle" aria-label="Toggle direction">LTR</button>
+          <a href="${links.contact}" class="btn btn-primary" style="margin-left: 12px;">Book Session</a>
         </div>
       </div>
     `;
@@ -107,17 +115,18 @@
               <li><a href="${links.home1}">Home 1</a></li>
               <li><a href="${links.home2}">Home 2</a></li>
               <li><a href="${links.about}">About Us</a></li>
-              <li><a href="${links.services}">Services</a></li>
+              <li><a href="${links.packages}">Packages</a></li>
+              <li><a href="${links.trainers}">Trainers</a></li>
               <li><a href="${links.contact}">Contact</a></li>
             </ul>
           </div>
           <div>
-            <h4 class="footer-heading">Services</h4>
+            <h4 class="footer-heading">Packages</h4>
             <ul class="footer-links">
-              <li><a href="${links.services}">In-Home Training</a></li>
-              <li><a href="${links.services}">Behavior Consultation</a></li>
-              <li><a href="${links.services}">Video Consultations</a></li>
-              <li><a href="${links.services}">Puppy Packages</a></li>
+              <li><a href="${links.packages}">In-Home Training</a></li>
+              <li><a href="${links.packages}">Behavior Consultation</a></li>
+              <li><a href="${links.packages}">Video Consultations</a></li>
+              <li><a href="${links.packages}">Puppy Packages</a></li>
               <li><a href="${links.contact}">Book a Session</a></li>
             </ul>
           </div>

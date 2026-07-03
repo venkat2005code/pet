@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/layout.css">
@@ -15,6 +18,7 @@
   <link rel="stylesheet" href="css/pages.css">
   <link rel="stylesheet" href="css/animations.css">
 </head>
+
 <body>
 
   <header class="site-header" id="site-header"></header>
@@ -28,15 +32,18 @@
           <div class="hero-text">
             <span class="badge"><i class="fa-solid fa-van-shuttle"></i> We Come to You</span>
             <h1 class="hero-title">Expert Training <span>At Your Doorstep</span></h1>
-            <p class="hero-description">Mobile dog training and behavior consultation in the comfort of your home. Personalized programs, real results — no facility visits required.</p>
+            <p class="hero-description">Mobile dog training and behavior consultation in the comfort of your home.
+              Personalized programs, real results — no facility visits required.</p>
             <div class="hero-buttons">
-              <a href="#booking" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book In-Home Session</a>
-              <a href="services.html" class="btn btn-secondary">View Packages</a>
+              <a href="#booking" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book In-Home
+                Session</a>
+              <a href="packages.html" class="btn btn-secondary">View Packages</a>
             </div>
           </div>
           <div class="hero-visual">
             <div class="hero-image-placeholder img-float">
-              <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=900&q=80" alt="Professional dog trainer working with a dog at home">
+              <img src="index_hero.png"
+                alt="Professional dog trainer working with a dog at home">
             </div>
             <div class="hero-stats-inline">
               <div class="hero-stat-mini">
@@ -53,6 +60,55 @@
       </div>
     </section>
 
+    <!-- Trust Indicators -->
+    <div class="trust-banner animate-item" style="background: var(--color-surface); border-bottom: 1px solid var(--color-border); padding: 32px 0;">
+      <div class="container">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px;">
+          
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <div style="width: 52px; height: 52px; border-radius: 50%; background: rgba(249,115,22,0.1); color: var(--color-primary); display: flex; align-items: center; justify-content: center; font-size: 1.25rem;">
+              <i class="fa-solid fa-dog"></i>
+            </div>
+            <div>
+              <div style="font-weight: 700; font-size: 1.15rem; color: var(--color-text);">1,800+</div>
+              <div style="font-size: 0.85rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Dogs Trained</div>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <div style="width: 52px; height: 52px; border-radius: 50%; background: rgba(249,115,22,0.1); color: var(--color-primary); display: flex; align-items: center; justify-content: center; font-size: 1.25rem;">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div>
+              <div style="font-weight: 700; font-size: 1.15rem; color: var(--color-text);">4.9/5 Rating</div>
+              <div style="font-size: 0.85rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Customer Reviews</div>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <div style="width: 52px; height: 52px; border-radius: 50%; background: rgba(249,115,22,0.1); color: var(--color-primary); display: flex; align-items: center; justify-content: center; font-size: 1.25rem;">
+              <i class="fa-solid fa-house-user"></i>
+            </div>
+            <div>
+              <div style="font-weight: 700; font-size: 1.15rem; color: var(--color-text);">In-Home Visits</div>
+              <div style="font-size: 0.85rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">We Come To You</div>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <div style="width: 52px; height: 52px; border-radius: 50%; background: rgba(249,115,22,0.1); color: var(--color-primary); display: flex; align-items: center; justify-content: center; font-size: 1.25rem;">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div>
+              <div style="font-weight: 700; font-size: 1.15rem; color: var(--color-text);">Certified Pro</div>
+              <div style="font-size: 0.85rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Behavior Specialist</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     <!-- Section 2: Training Packages -->
     <section class="section" id="packages">
       <div class="container">
@@ -64,12 +120,14 @@
         <div class="grid-3 packages-grid">
           <div class="program-card animate-item" data-delay="1">
             <div class="program-image">
-              <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&q=80" alt="Puppy training at home">
+              <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&q=80"
+                alt="Puppy training at home">
             </div>
             <div class="program-body">
               <span class="program-tag">Starter</span>
               <h3 class="program-title">Home Starter Pack</h3>
-              <p class="program-desc">4 in-home sessions covering sit, stay, recall, and leash manners in your neighborhood.</p>
+              <p class="program-desc">4 in-home sessions covering sit, stay, recall, and leash manners in your
+                neighborhood.</p>
               <div class="program-meta">
                 <span><i class="fa-solid fa-house"></i> 4 Sessions</span>
                 <span class="program-price">$349</span>
@@ -78,12 +136,14 @@
           </div>
           <div class="program-card animate-item" data-delay="2">
             <div class="program-image">
-              <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&q=80" alt="Dog behavior consultation">
+              <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&q=80"
+                alt="Dog behavior consultation">
             </div>
             <div class="program-body">
               <span class="program-tag">Most Popular</span>
               <h3 class="program-title">Behavior Consultation</h3>
-              <p class="program-desc">Full behavior assessment plus 6 customized sessions for anxiety, aggression, or reactivity.</p>
+              <p class="program-desc">Full behavior assessment plus 6 customized sessions for anxiety, aggression, or
+                reactivity.</p>
               <div class="program-meta">
                 <span><i class="fa-solid fa-brain"></i> 6 Sessions</span>
                 <span class="program-price">$549</span>
@@ -97,12 +157,129 @@
             <div class="program-body">
               <span class="program-tag">Premium</span>
               <h3 class="program-title">Complete Transformation</h3>
-              <p class="program-desc">12-session comprehensive program with video check-ins and a personalized behavior plan.</p>
+              <p class="program-desc">12-session comprehensive program with video check-ins and a personalized behavior
+                plan.</p>
               <div class="program-meta">
                 <span><i class="fa-solid fa-star"></i> 12 Sessions</span>
                 <span class="program-price">$999</span>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why Choose Us -->
+    <section class="section section-dark" id="why-choose-us" style="position:relative; overflow:hidden;">
+      <!-- Decorative background blur -->
+      <div style="position:absolute; top: -100px; left: -100px; width: 400px; height: 400px; background: var(--color-primary); filter: blur(150px); opacity: 0.15; border-radius: 50%; pointer-events: none;"></div>
+      <div style="position:absolute; bottom: -100px; right: -100px; width: 300px; height: 300px; background: var(--color-primary); filter: blur(120px); opacity: 0.1; border-radius: 50%; pointer-events: none;"></div>
+
+      <div class="container" style="position:relative; z-index:1;">
+        <div class="section-header animate-item">
+          <span class="section-label">Why Choose Us</span>
+          <h2 class="section-title">Training That Fits Your Life</h2>
+          <p class="section-subtitle">We eliminate the stress of commuting to a facility. By training in your dog's natural environment, we solve real problems where they actually happen.</p>
+        </div>
+
+        <style>
+          .bento-banner {
+            position: relative;
+            margin-top: 40px;
+          }
+          .bento-image-wrap {
+            width: 100%;
+            height: 550px;
+            border-radius: 32px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+          }
+          .bento-image-wrap::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(10,10,10,0) 40%, #0a0a0a 100%);
+            pointer-events: none;
+          }
+          .bento-image-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+          
+          .bento-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            position: relative;
+            z-index: 2;
+            margin-top: -120px;
+            padding: 0 24px;
+          }
+          
+          .bento-card {
+            background: rgba(25, 25, 25, 0.75);
+            border: 1px solid rgba(255,255,255,0.08);
+            backdrop-filter: blur(16px);
+            padding: 40px 32px;
+            border-radius: 24px;
+            transition: transform var(--transition-normal), border-color var(--transition-normal);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            height: 100%;
+          }
+          .bento-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(249,115,22,0.5);
+          }
+          .bento-card.highlight {
+            background: linear-gradient(135deg, rgba(249,115,22,0.15), rgba(234,88,12,0.05));
+            border: 1px solid rgba(249,115,22,0.3);
+          }
+
+          @media (max-width: 992px) {
+            .bento-cards-grid {
+              grid-template-columns: 1fr;
+              margin-top: -80px;
+              gap: 24px;
+              padding: 0;
+            }
+            .bento-image-wrap {
+              height: 400px;
+            }
+          }
+        </style>
+
+        <div class="bento-banner animate-item" data-delay="1">
+          <!-- Wide Banner Image -->
+          <div class="bento-image-wrap">
+            <img src="why_choose_us.jpeg" alt="Dog trainer arriving at home">
+          </div>
+          
+          <!-- Overlapping Cards -->
+          <div class="bento-cards-grid">
+            
+            <!-- Card 1 -->
+            <div class="bento-card animate-item" data-delay="2">
+              <div class="card-icon" style="margin-bottom:24px;color:var(--color-primary);font-size:28px;"><i class="fa-solid fa-house-chimney-user"></i></div>
+              <h3 class="card-title" style="margin-bottom:12px; font-size:1.4rem;">Ultimate Convenience</h3>
+              <p class="card-text" style="color:rgba(255,255,255,0.7);line-height:1.6;">No traffic, no stress. We bring expert behavior consultation directly to your doorstep.</p>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="bento-card highlight animate-item" data-delay="3">
+              <div class="card-icon" style="margin-bottom:24px;color:var(--color-primary);font-size:28px;"><i class="fa-solid fa-bullseye"></i></div>
+              <h3 class="card-title" style="margin-bottom:12px; font-size:1.4rem; color:#fff;">Real-World Practice</h3>
+              <p class="card-text" style="color:rgba(255,255,255,0.85);line-height:1.6;">Address door-dashing, fence fighting, and leash reactivity exactly where they occur.</p>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="bento-card animate-item" data-delay="4">
+              <div class="card-icon" style="margin-bottom:24px;color:var(--color-primary);font-size:28px;"><i class="fa-solid fa-user-check"></i></div>
+              <h3 class="card-title" style="margin-bottom:12px; font-size:1.4rem;">Personalized Attention</h3>
+              <p class="card-text" style="color:rgba(255,255,255,0.7);line-height:1.6;">1-on-1 focus for you and your dog, without the distractions of a group class.</p>
+            </div>
+
           </div>
         </div>
       </div>
@@ -113,16 +290,21 @@
       <div class="container">
         <div class="hero-content">
           <div class="section-img-wrap animate-item animate-left">
-            <img class="section-img" src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=900&q=80" alt="Happy dog after successful training">
+            <img class="section-img" src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=900&q=80"
+              alt="Happy dog after successful training">
           </div>
           <div class="animate-item animate-right">
             <span class="section-label">Success Stories</span>
             <h2 class="section-title" style="text-align:left;">Real Results, Real Homes</h2>
-            <p class="section-subtitle" style="text-align:left;margin-bottom:32px;">Clients whose dogs transformed through our mobile training services.</p>
+            <p class="section-subtitle" style="text-align:left;margin-bottom:32px;">Clients whose dogs transformed
+              through our mobile training services.</p>
             <div class="testimonial-card" style="margin-bottom:16px;">
-              <p class="testimonial-text">"Our reactive terrier can now pass other dogs calmly on our street. Life-changing after just 5 in-home sessions!"</p>
+              <p class="testimonial-text">"Our reactive terrier can now pass other dogs calmly on our street.
+                Life-changing after just 5 in-home sessions!"</p>
               <div class="testimonial-author">
-                <div class="author-avatar"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Lisa Parker" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
+                <div class="author-avatar"><img
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Lisa Parker"
+                    style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
                 <div>
                   <div class="author-name">Lisa Parker</div>
                   <div class="author-role">North Suburbs · Behavior Package</div>
@@ -130,9 +312,12 @@
               </div>
             </div>
             <div class="testimonial-card">
-              <p class="testimonial-text">"Having the trainer come to our home made all the difference. They worked in the exact environment where problems happened."</p>
+              <p class="testimonial-text">"Having the trainer come to our home made all the difference. They worked in
+                the exact environment where problems happened."</p>
               <div class="testimonial-author">
-                <div class="author-avatar"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Marcus Thompson" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
+                <div class="author-avatar"><img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Marcus Thompson"
+                    style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
                 <div>
                   <div class="author-name">Marcus Thompson</div>
                   <div class="author-role">Downtown · Complete Transformation</div>
@@ -151,14 +336,17 @@
           <div class="animate-item animate-left">
             <span class="section-label">Video Consultations</span>
             <h2 class="section-title" style="text-align:left;">Train From Anywhere</h2>
-            <p class="section-subtitle" style="text-align:left;margin-bottom:28px;">Start with a live video consultation before we arrive at your door.</p>
+            <p class="section-subtitle" style="text-align:left;margin-bottom:28px;">Start with a live video consultation
+              before we arrive at your door.</p>
             <div class="card" style="margin-bottom:16px;padding:24px;">
-              <div class="card-icon" style="width:48px;height:48px;margin-bottom:12px;"><i class="fa-solid fa-video"></i></div>
+              <div class="card-icon" style="width:48px;height:48px;margin-bottom:12px;"><i
+                  class="fa-solid fa-video"></i></div>
               <h3 class="card-title">Pre-Visit Assessment</h3>
               <p class="card-text">45-minute video call to evaluate behavior and create a tailored plan.</p>
             </div>
             <div class="card" style="padding:24px;">
-              <div class="card-icon" style="width:48px;height:48px;margin-bottom:12px;"><i class="fa-solid fa-laptop"></i></div>
+              <div class="card-icon" style="width:48px;height:48px;margin-bottom:12px;"><i
+                  class="fa-solid fa-laptop"></i></div>
               <h3 class="card-title">Remote-Only Package</h3>
               <p class="card-text">4 live video sessions for clients outside our service area.</p>
             </div>
@@ -168,7 +356,7 @@
           </div>
         </div>
       </div>
-    </section>    <!-- Section 5: Service Area -->
+    </section> <!-- Section 5: Service Area -->
     <section class="section section-dark" id="service-area">
       <div class="container">
         <div class="section-header animate-item">
@@ -234,24 +422,32 @@
           <div class="service-zones animate-item animate-right">
             <h3 class="card-title" style="margin-bottom:20px;color:#fff;">Covered Zones</h3>
             <ul class="zone-list">
-              <li class="zone-item"><span class="zone-dot"></span><i class="fa-solid fa-location-dot" style="color:var(--color-primary);margin-right:8px;"></i> Downtown &amp; Central</li>
-              <li class="zone-item"><span class="zone-dot"></span><i class="fa-solid fa-location-dot" style="color:var(--color-primary);margin-right:8px;"></i> North Suburbs</li>
-              <li class="zone-item"><span class="zone-dot"></span><i class="fa-solid fa-location-dot" style="color:var(--color-primary);margin-right:8px;"></i> South Suburbs</li>
-              <li class="zone-item"><span class="zone-dot"></span><i class="fa-solid fa-location-dot" style="color:var(--color-primary);margin-right:8px;"></i> East Valley</li>
-              <li class="zone-item"><span class="zone-dot"></span><i class="fa-solid fa-location-dot" style="color:var(--color-primary);margin-right:8px;"></i> West Hills</li>
+              <li class="zone-item"><span class="zone-dot"></span><i class="fa-solid fa-location-dot"
+                  style="color:var(--color-primary);margin-right:8px;"></i> Downtown &amp; Central</li>
+              <li class="zone-item"><span class="zone-dot"></span><i class="fa-solid fa-location-dot"
+                  style="color:var(--color-primary);margin-right:8px;"></i> North Suburbs</li>
+              <li class="zone-item"><span class="zone-dot"></span><i class="fa-solid fa-location-dot"
+                  style="color:var(--color-primary);margin-right:8px;"></i> South Suburbs</li>
+              <li class="zone-item"><span class="zone-dot"></span><i class="fa-solid fa-location-dot"
+                  style="color:var(--color-primary);margin-right:8px;"></i> East Valley</li>
+              <li class="zone-item"><span class="zone-dot"></span><i class="fa-solid fa-location-dot"
+                  style="color:var(--color-primary);margin-right:8px;"></i> West Hills</li>
             </ul>
-            <a href="contact.html" class="btn btn-primary" style="margin-top:24px;"><i class="fa-solid fa-map-location-dot"></i> Check Availability</a>
+            <a href="contact.html" class="btn btn-primary" style="margin-top:24px;"><i
+                class="fa-solid fa-map-location-dot"></i> Check Availability</a>
           </div>
         </div>
       </div>
-    </section>    <!-- Section 6: CTA -->
+    </section> <!-- Section 6: CTA -->
     <section class="cta-section" id="cta">
       <div class="container">
         <h2 class="cta-title animate-item">Ready to Transform Your Dog's Behavior?</h2>
         <p class="cta-text animate-item">Book an in-home session or start with a free video consultation call today.</p>
         <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;" class="animate-item">
-          <a href="contact.html#booking" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book In-Home Session</a>
-          <a href="services.html" class="btn" style="background:#fff;color:var(--color-primary-dark);">View All Services</a>
+          <a href="contact.html#booking" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book In-Home
+            Session</a>
+          <a href="packages.html" class="btn" style="background:#fff;color:var(--color-primary-dark);">View All
+            Packages</a>
         </div>
       </div>
     </section>
@@ -262,7 +458,8 @@
   <script src="js/config.js"></script>
   <script src="js/theme.js"></script>
   <script src="js/rtl.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=2"></script>
   <script src="js/animations.js"></script>
 </body>
+
 </html>
