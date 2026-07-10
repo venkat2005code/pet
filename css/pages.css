@@ -126,7 +126,8 @@
 }
 
 .program-image {
-  height: 200px;
+  aspect-ratio: 16/9;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -1475,7 +1476,7 @@ main:has(.dashboard-layout) {
   }
 
   .program-image {
-    height: 150px;
+    height: auto;
   }
 
   .program-title {
