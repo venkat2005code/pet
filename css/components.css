@@ -26,48 +26,27 @@
 .site-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.8rem;
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--color-text);
+  white-space: nowrap;
   flex-shrink: 0;
+  text-decoration: none;
 }
 
-.logo-mark {
-  width: 44px;
-  height: 44px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
-  border-radius: 10px;
+.logo-icon {
+  color: var(--color-primary);
+  font-size: 1.2em;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
-  flex-shrink: 0;
-  box-shadow: 0 2px 10px rgba(249,115,22,0.4);
-}
-
-.logo-mark i {
-  color: #ffffff;
-  font-size: 1.1rem;
-}
-
-.logo-word {
-  font-family: var(--font-logo);
-  font-size: 1.15rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: var(--color-text);
-  white-space: nowrap;
-}
-
-[data-theme="dark"] .logo-mark {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
 }
 
 .logo-text {
-  font-family: var(--font-logo);
-  font-size: 1.2rem;
-  font-weight: 800;
-  letter-spacing: 3px;
-  color: var(--color-text);
-  white-space: nowrap;
+  color: inherit;
 }
 
 .logo-text span {

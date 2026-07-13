@@ -33,8 +33,8 @@
     header.innerHTML = `
       <div class="header-inner">
         <a href="${links.home1}" class="site-logo">
-          <div class="logo-mark"><i class="fa-solid fa-dog"></i></div>
-          <span class="logo-word">${SITE_CONFIG.logoText}</span>
+          <span class="logo-icon"><i class="fa-solid fa-dog"></i></span>
+          <span class="logo-text">${SITE_CONFIG.logoText}</span>
         </a>
 
         <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
@@ -98,8 +98,8 @@
         <div class="footer-grid">
           <div class="footer-brand">
             <div class="site-logo" style="margin-bottom:16px;">
-              <div class="logo-mark" style="color:#f5f5f5;"><i class="fa-solid fa-dog"></i></div>
-              <span class="logo-word" style="color:#ffffff;font-weight:700;">${SITE_CONFIG.logoText}</span>
+              <span class="logo-icon"><i class="fa-solid fa-dog"></i></span>
+              <span class="logo-text" style="color:#ffffff;">${SITE_CONFIG.logoText}</span>
             </div>
             <p>${SITE_CONFIG.projectDescription}</p>
             <div class="footer-social">

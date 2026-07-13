@@ -125,13 +125,13 @@
   animation: pinBounce 2s ease-in-out infinite;
 }
 
-/* Logo subtle glow */
-.logo-mark {
-  transition: box-shadow var(--transition-normal);
+/* Logo hover animation */
+.logo-icon {
+  transition: transform var(--transition-normal);
 }
 
-.site-logo:hover .logo-mark {
-  box-shadow: var(--shadow-primary);
+.site-logo:hover .logo-icon {
+  transform: scale(1.1) rotate(5deg);
 }
 
 /* Reduced motion */
